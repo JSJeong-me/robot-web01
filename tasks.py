@@ -5,7 +5,7 @@ browser = Selenium()
 
 
 def store_web_page_content():
-    browser.open_available_browser("https://robotframework.org/")
+    browser.open_available_browser("https://naver.com/")
     text = browser.get_text("css:body")
     FileSystem().create_file("output/text.txt", text, overwrite=True)
     browser.screenshot("css:h1", "output/screenshot.png")
