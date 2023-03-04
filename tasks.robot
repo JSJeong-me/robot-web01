@@ -10,7 +10,7 @@ Library             RPA.FileSystem
 
 *** Tasks ***
 Store Web Page Content
-    Open Available Browser    https://robotframework.org/
+    Open Available Browser    https://naver.com/
     ${text}=    Get Text    css:body
     Create File    ${OUTPUT_DIR}${/}text.txt    ${text}    overwrite=True
     Screenshot    css:h1    ${OUTPUT_DIR}${/}screenshot.png
